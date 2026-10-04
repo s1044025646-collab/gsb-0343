@@ -1,0 +1,26 @@
+{
+  "name": "secded-backend",
+  "version": "1.0.0",
+  "description": "Hamming(8,4) SECDED 教学后端",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/secded.test.ts",
+    "test:src": "tsx --test test/",
+    "start": "npm run build && node dist/api.js",
+    "cli": "npm run build && node dist/cli.js",
+    "demo": "npm run build && tsx src/demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
